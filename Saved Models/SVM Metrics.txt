@@ -1,0 +1,4 @@
+Linear Kernel:
+
+1. C = 0.1, Gamma = 0.0001: Accuracy = 56.221%
+2. C = 1, Gamma = 0.0001: Accuracy = 49.308%
