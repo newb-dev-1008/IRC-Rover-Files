@@ -11,4 +11,6 @@ int main(int argc, char **argv) {
     NodeHandler n;
     Publisher publisher = n.advertise<std_msgs::String>("Chatter", 1000);
     Rate loop_rate(1.0);
+
+    // Random edit
 })
