@@ -9,7 +9,7 @@ int main(int argc, char **argv) {
     init(argc, argv, "Talker");
 
     NodeHandler n;
-    Publisher publisher = n.advertise<std_msgs::String>("Chatter", 1000);
+    Publisher publisher = n.advertise<std_msgs::String>("TopicName", 1000);
     Rate loop_rate(1.0);
 
     int count = 0;
