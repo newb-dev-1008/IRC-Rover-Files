@@ -21,5 +21,12 @@ int main(int argc, char **argv) {
         msg.data = ss.str();
 
         ROS_INFO("Published: %s\n", msg.data.c_str());
+        publisher.publish(msg);
+        ros::spinOnce();
+
+        loop_rate.sleep();
+        count++;
     }
+
+    return 0;
 })
