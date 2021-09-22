@@ -12,6 +12,14 @@ int main(int argc, char **argv) {
     Publisher publisher = n.advertise<std_msgs::String>("Chatter", 1000);
     Rate loop_rate(1.0);
 
-    // Random edit
-    // Random edit 2
+    int count = 0;
+    while (ok()) {
+        std_msgs::String msg;
+        std::stringstream ss;
+
+        ss << "Hello World" << count;
+        msg.data = ss.str();
+
+        ROS_INFO("Published: %s\n", msg.data.c_str());
+    }
 })
